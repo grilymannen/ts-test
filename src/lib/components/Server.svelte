@@ -14,9 +14,9 @@
   // State
   let isSelected: boolean = $derived(selectedIdx === idx);
 </script>
-<button class={`flex justify-center items-center group rounded-lg cursor-pointer relative bg-body-500 hover:bg-discord-500 size-10 ${isSelected ? "" : ""}`} onclick={() => selectedIdx = idx}>
+<button class={`flex justify-center items-center group rounded-lg cursor-pointer relative bg-body-500 hover:bg-discord-500 size-10 ${isSelected ?  "bg-discord-500" : ""}`} onclick={() => selectedIdx = idx}>
   {#if server.img}
-    <img src={server.img} alt={server.name}>
+    <img  class="h-full w-full object-contain border border-red-500" src={server.img} alt={server.name}>
   {/if}
   <!--
     base: size-2 opacity-0 -left-6

@@ -3,7 +3,6 @@ export interface User {
   img: string;
 };
 
-
 export interface Server {
   name: string;
   img: string;
