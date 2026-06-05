@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { deepCapitalize, formatServerName } from "@grilymannen/grily-utils";
   // Types
   import type { Server } from '$lib/types';
 
@@ -16,7 +17,9 @@
 </script>
 <button class={`flex justify-center items-center group rounded-lg cursor-pointer relative bg-body-500 hover:bg-discord-500 size-10 ${isSelected ?  "bg-discord-500" : ""}`} onclick={() => selectedIdx = idx}>
   {#if server.img}
-    <img  class="h-full w-full object-contain border border-red-500" src={server.img} alt={server.name}>
+    <img class="block h-full max-w-full object-cover rounded-lg " src={server.img} alt={deepCapitalize(server.name)}>
+  {:else}
+    <p class="min-w-0 text-center text-body-100">{formatServerName(server.name)}</p>
   {/if}
   <!--
     base: size-2 opacity-0 -left-6
