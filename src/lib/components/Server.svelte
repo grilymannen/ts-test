@@ -1,5 +1,10 @@
 <script lang="ts">
+
   import { deepCapitalize, formatServerName } from "@grilymannen/grily-utils";
+
+  // Components
+  import Tooltip from "./Tooltip.svelte";
+
   // Types
   import type { Server } from '$lib/types';
 
@@ -27,8 +32,9 @@
     hovered: h-6 opacity-100 -left-4
     selected: h-full opacity-100 -left-4
   -->
+  <Tooltip>{server.name}</Tooltip>
   <div class={`
-    absolute w-2 rounded bg-white -left-4
+    absolute w-2 rounded bg-white -left-6
     transition-all
     ${isSelected 
         ? 'h-full opacity-100' 

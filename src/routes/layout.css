@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import 'tailwindcss';
 
 @theme {
+  --font-open-sans: "Open Sans", sans serif;
+
   /* Discord Blurple */
   --color-discord-50:  #f2f3ff;
   --color-discord-100: #e5e7ff;
@@ -15,15 +18,15 @@
   --color-discord-950: #171b43;
 
   /* Discord Dark Body */
-  --color-body-50:  #f5f5f6;
-  --color-body-100: #ebebed;
-  --color-body-200: #d7d8db;
-  --color-body-300: #bfc1c6;
-  --color-body-400: #a6a8ad;
-  --color-body-500: #313338; /* main body */
-  --color-body-600: #2b2d31;
-  --color-body-700: #242629;
-  --color-body-800: #1c1d21;
-  --color-body-900: #121215;
-  --color-body-950: #080809;
+--color-body-50:  #f4f5f6;
+--color-body-100: #e6e8ea;
+--color-body-200: #999aa1; /* Done */
+--color-body-300: #414149; /* Done */
+--color-body-400: #393a41; /* Done */
+--color-body-500: #323339; /* Done */
+--color-body-600: #2c2d32; /* Done */
+--color-body-700: #242629;
+--color-body-800: #1c1d21;
+--color-body-900: #121215;
+--color-body-950: #080809;
 }
